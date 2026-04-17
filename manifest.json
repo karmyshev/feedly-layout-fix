@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Feedly AnyLayout",
+  "version": "1.0",
+  "description": "Навигация в Feedly клавишами j/k в любой раскладке",
+  "content_scripts": [
+    {
+      "matches": ["https://feedly.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
