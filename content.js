@@ -13,6 +13,7 @@ document.addEventListener('keydown', function(event) {
   // Русская раскладка: о = j (следующая), л = k (предыдущая)
   if (event.key === 'о') keyToEmulate = 'j';
   if (event.key === 'л') keyToEmulate = 'k';
+  if (event.key === 'ы') keyToEmulate = 's';
   
   if (keyToEmulate) {
     event.preventDefault();
